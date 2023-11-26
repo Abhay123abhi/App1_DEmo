@@ -1,0 +1,12 @@
+<h1 style="text-align: center; color:blue;">Welcome to {{title}}</h1>
+<button (click)="getName()">Click Me</button>
+<br>
+
+<input type="text" #box (input)="getValue(box.value)" placeholder="Enter Name" name="name" />
+<button (click)="getValue(box.value)">Click</button>
+
+<p> Input : {{displayVal}}</p>
+
+<button (click)="counter('add')">++</button>
+<p>count : {{count}}</p>
+<button (click)="counter('min')">--</button>    
